@@ -1,7 +1,11 @@
+import MovieCard from './components/MovieCard';
+import MovieList from './components/MovieList';
 import './sass/main.scss';
 
 function App() {
-  return
+  return (
+    <MovieList />
+  )
 }
 
 export default App;
