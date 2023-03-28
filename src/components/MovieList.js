@@ -4,7 +4,7 @@ import MovieCard from "./MovieCard";
 export default function MovieList({ query, setNoResults, NoResults }) {
   const [movies, setMovies] = useState([]);
   const [filter, setFilter] = useState("all");
-
+  
   useEffect(() => {
     const fetchMovies = async () => {
       const trimQuery = query.trim();
@@ -14,11 +14,19 @@ export default function MovieList({ query, setNoResults, NoResults }) {
       }
       const response = await fetch(url);
       const data = await response.json();
-      (data && data.Search) ? setMovies(data.Search) : setNoResults(true);
+      if (data && data.Search) {
+        setMovies(data.Search);
+        setNoResults(false);
+      } else {
+        setNoResults(true);
+      }
     };
   
     query.trim() && fetchMovies();
   }, [query, filter, setNoResults]);
+  
+  
+  
 
   const handleFilterChange = (e) => {
     setFilter(e.target.value);

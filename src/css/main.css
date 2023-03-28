@@ -24,6 +24,11 @@ h1 {
   margin: 0;
 }
 
+.container a {
+  text-decoration: none;
+  color: inherit;
+}
+
 nav {
   display: flex;
   gap: 20px;
@@ -189,7 +194,7 @@ span {
 .filter-options {
   display: flex;
   margin-top: -170px;
-  margin-left: -20px;
+  margin-left: -23px;
 }
 
 .filter-options label {
