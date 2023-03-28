@@ -16,7 +16,7 @@ export default function SearchResults({ handleSearch }) {
   return (
     <form onSubmit={handleSubmit}>
       <input type="text" placeholder="Søk etter filmer..." value={query} onChange={handleChange} required/>
-      <button type="submit">Søk</button>
+      <button className="searchBtn" type="submit">Søk</button>
     </form>
   );
 }
