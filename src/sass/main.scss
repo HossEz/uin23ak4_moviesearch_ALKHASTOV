@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&family=Tilt+Warp&display=swap');
 
 body {
-    font-family: 'Rubik', sans-serif;
-    background-color: #000000;
-    color: #fff;
-    // font-size: 16px;
-  }
-  
+  font-family: 'Rubik', sans-serif;
+  background-color: #000000;
+  color: #fff;
+  // font-size: 16px;
+
   header {
     font-family: 'Tilt Warp', sans-serif;
     text-shadow: 3px 3px 20px #af99ff,  //hentet fra (Nr. 10): https://www.codesdope.com/blog/article/25-creative-css3-text-shadow-effects-you-cant-miss/
@@ -20,73 +19,73 @@ body {
     width: 100%;
     background-color: #0f0f23;
     z-index: 1;
+
+    h1 {
+      font-size: 50px;
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+
+      li {
+        list-style: none;
+        font-size: 20px;
+      }
+    }
   }
-  
-  h1 {
-    font-size: 50px;
-    margin: 0;
-  }
-  
-  .container a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  nav {
-    display: flex;
-    gap: 20px;
-  }
-  
-  nav li {
-    list-style: none;
-    font-size: 20px;
-  }
-  
+
   .container {
     margin-top: 200px;
-  }
 
-  .container h2 {
-    font-size: 68px;
-    text-align: center;
-    text-shadow: 0 2px 1px #747474,   //hentet fra (Nr. 12): https://www.codesdope.com/blog/article/25-creative-css3-text-shadow-effects-you-cant-miss/
-    -1px 3px 1px #767676, 
-    -2px 5px 1px #787878, 
-    -3px 7px 1px #7a7a7a,
-    -4px 9px 1px #7f7f7f,
-    -5px 11px 1px #838383,
-    -6px 13px 1px #878787;
-    margin: 0;
-  }
+    h2 {
+      font-size: 68px;
+      text-align: center;
+      text-shadow: 0 2px 1px #747474,   //hentet fra (Nr. 12): https://www.codesdope.com/blog/article/25-creative-css3-text-shadow-effects-you-cant-miss/
+      -1px 3px 1px #767676, 
+      -2px 5px 1px #787878, 
+      -3px 7px 1px #7a7a7a,
+      -4px 9px 1px #7f7f7f,
+      -5px 11px 1px #838383,
+      -6px 13px 1px #878787;
+      margin: 0;
+    }
 
-  .firstH3 {
-    color: #e6e6e6;
-    font-size: 48px;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    margin-top: 150px;
-    
-  }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-  .firstP {
-    color: #c0c0c0;
-    font-size: 24px;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 100px;
-  }
+    .firstH3 {
+      color: #e6e6e6;
+      font-size: 48px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      margin-top: 150px;
+    }
 
-  .noResults {
-    color: #c0c0c0;
-    font-size: 24px;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
+    .firstP {
+      color: #c0c0c0;
+      font-size: 24px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+    .noResults {
+      color: #c0c0c0;
+      font-size: 24px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+    }
   }
+}
 
 .movie-list {
   display: flex;
