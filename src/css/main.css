@@ -4,8 +4,7 @@ body {
   background-color: #000000;
   color: #fff;
 }
-
-header {
+body header {
   font-family: "Tilt Warp", sans-serif;
   text-shadow: 3px 3px 20px #af99ff, -2px 1px 30px #af99ff;
   display: flex;
@@ -18,39 +17,32 @@ header {
   background-color: #0f0f23;
   z-index: 1;
 }
-
-h1 {
+body header h1 {
   font-size: 50px;
   margin: 0;
 }
-
-.container a {
-  text-decoration: none;
-  color: inherit;
-}
-
-nav {
+body header nav {
   display: flex;
   gap: 20px;
 }
-
-nav li {
+body header nav li {
   list-style: none;
   font-size: 20px;
 }
-
-.container {
+body .container {
   margin-top: 200px;
 }
-
-.container h2 {
+body .container h2 {
   font-size: 68px;
   text-align: center;
   text-shadow: 0 2px 1px #747474, -1px 3px 1px #767676, -2px 5px 1px #787878, -3px 7px 1px #7a7a7a, -4px 9px 1px #7f7f7f, -5px 11px 1px #838383, -6px 13px 1px #878787;
   margin: 0;
 }
-
-.firstH3 {
+body .container a {
+  text-decoration: none;
+  color: inherit;
+}
+body .container .firstH3 {
   color: #e6e6e6;
   font-size: 48px;
   font-weight: bold;
@@ -60,8 +52,7 @@ nav li {
   width: 100%;
   margin-top: 150px;
 }
-
-.firstP {
+body .container .firstP {
   color: #c0c0c0;
   font-size: 24px;
   font-weight: bold;
@@ -69,8 +60,7 @@ nav li {
   text-align: center;
   margin-bottom: 100px;
 }
-
-.noResults {
+body .container .noResults {
   color: #c0c0c0;
   font-size: 24px;
   font-weight: bold;
