@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Layout from "./components/Layout";
 import SearchResults from "./components/SearchResults";
 import MovieList from "./components/MovieList";

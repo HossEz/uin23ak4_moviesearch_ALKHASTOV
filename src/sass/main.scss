@@ -100,7 +100,6 @@ body {
     transition: transform 0.2s ease-in-out;
   }
   
-  
   // .movie-card:hover {
   //   transform: scale(1.05);
   // }
@@ -118,11 +117,6 @@ body {
     height: 4rem;
     text-overflow: ellipsis;
   }
-
-  // .movie-card h3::-webkit-scrollbar {
-  //   display: none;
-
-  // }
   
   .movie-card p {
     font-size: 18px;
@@ -136,9 +130,6 @@ body {
     font-weight: bold;
   }
   
-  .movie-card a:hover {
-    color: #9e61ff;
-  }
   
   form {
     display: flex;
@@ -166,7 +157,7 @@ body {
     outline: none;
   }
   
-  button {
+  .searchBtn {
     padding: 10px 20px;
     font-size: 20px;
     border-radius: 5px;
@@ -178,9 +169,77 @@ body {
     margin-left: 10px;
   }
   
-  button:hover {
+  .searchBtn:hover {
     background-color: #572c9c;
   }
+
+.lesBtn {
+    display: inline-block;
+    padding: 8px 8px;
+    background-color: #904bff;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 17px !important;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out !important;
+  }
+  .lesBtn:hover {
+    background-color: #572c9c;
+  }
+
+
+  span {
+    font-weight: bold;
+  }
+  
+  .movie-list.loaded .movie-card {
+    opacity: 1;
+  }
+  
+  
+  .filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .filter-options {
+    display: flex;
+    margin-top: -170px;
+    margin-left: -20px;
+  }
+  
+  .filter-options label {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    font-size: 15px;
+    color: #fff;
+  }
+  
+  .filter-options input[type="radio"] {
+    margin-right: 5px;
+    appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+  }
+  
+  .filter-options :checked:before {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+    background-color: #904bff;
+  }
+  
+  
+  
+
+  
   
 
 
