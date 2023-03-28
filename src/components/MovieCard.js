@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 export default function MovieCard({ movie }) {
   const { Title, Year, imdbID, Type, Poster } = movie;
   const [details, setDetails] = useState({});
+  const [posterError, setPosterError] = useState(false);
+
 
   useEffect(() => {
     const fetchDetails = async () => {
@@ -13,12 +15,16 @@ export default function MovieCard({ movie }) {
     fetchDetails();
   }, [imdbID]);
 
+  const PosterError = () => {
+    setPosterError(true);
+  };
+
   return (
     <article className="movie-card">
-      {Poster === "N/A" ? (
+      {posterError ? (
         <img src="https://cloud.filmfed.com/defaults/movie-poster/l_movie_poster_default.png" alt={Title} />
       ) : (
-        <img src={Poster} alt={Title} />
+        <img src={Poster} alt={Title} onError={PosterError}/>
       )}
       <h3>{Title}</h3>
       <p><span>Plott: </span>{details.Plot}</p>
