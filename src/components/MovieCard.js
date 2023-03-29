@@ -30,6 +30,7 @@ export default function MovieCard({ movie }) {
       <p><span>Plott: </span>{details.Plot}</p>
       <p><span>År: </span>{Year}</p>
       <p><span>Type: </span>{Type}</p>
+      <p><span>Sjanger: </span>{details.Genre}</p>
       <p><span>Regissør: </span>{details.Director}</p>
       <p><span>Skuespillere: </span>{details.Actors}</p>
       <p><span>Awards: </span>{details.Awards}</p>
